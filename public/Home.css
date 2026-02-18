@@ -1,0 +1,328 @@
+
+body{
+    /* transition:  background-color 1.5s 0.5s; */
+    margin: 4rem;
+    padding-top:4rem;
+
+
+}
+
+#home.active{
+    border-bottom: 0.1rem solid #747272;
+    position: relative;
+    transform: scale(1.3);
+}
+.header{
+    z-index: 100;
+    position:fixed;
+    margin-bottom: auto;
+    /* transition:  background-color 1.5s 0.5s; */
+    width: 100%;
+    height: 4rem;
+    background-color: #abd6de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    
+}
+a{
+    text-decoration: none;
+    padding: 0.5rem;
+    margin:1rem;
+    color:black;
+    display: flex;
+    
+}
+.header a:hover{
+    border-bottom: 0.1em solid #ccc;
+    transform: scale(1.5);
+    transition: 1s 0.2s;
+    
+    
+}
+.header img, .photo button img{
+    cursor: pointer;
+    position:relative ;
+    width: 1rem;
+    height: 1rem;
+    padding-right: 6px;
+    
+}
+.photo{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo button{
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    width: 16rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background-color: #abd6de;
+    cursor: pointer;
+}
+.photo button img{
+    position: relative;
+    top:-1rem;
+
+}
+.photo img{
+    
+    padding:1rem;
+    width: 25rem;
+    height:25rem;
+    
+}
+#toggleButton{
+    margin-left: auto;
+    margin-right: 15px;
+    padding: 10PX;
+}
+/* .search-container {
+    display: flex;  
+    flex-grow: 0.7;         
+    align-items: center;
+    width: 2rem;            
+    margin-left: 10rem ; 
+    margin-right: 4rem;
+    border: 1px solid #ccc;  
+    border-radius: 25px;     
+    overflow: hidden;        
+    background-color: #f0f0f0;
+} */
+
+/* .search-container input {
+    border: none;
+    display: inline-flex;  
+    padding: 0.5rem 1rem;
+    flex: 1;                 
+    font-size: 1rem;
+    outline: none;           
+    background-color: transparent;
+} */
+
+/* .search-container button {
+    display: inline-flex;  
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.search-container button:hover {
+    background-color: #0b7dda;
+} */
+#welcomemsg  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    
+}
+#welcomemsg :nth-child(1) {
+    
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+#welcomemsg :nth-child(2) {
+    
+    font-size: 1rem;
+}
+#containerDot{
+        cursor: pointer;
+        width: 60px;
+        height: 30px;
+        background-color: white;
+        border:3px solid rgba(24, 32, 153, 0.534);
+        border-radius: 60px;
+        display: flex;
+    #dot{
+    width: 30px;
+    height: auto;
+    background-color: #cacaca;
+    border:3px solid rgba(24, 32, 153, 0.534);
+    border-radius: 60px;
+    display: inline-flex;
+    /* transition:  3s 0.2s; */
+
+    }
+    
+}
+
+
+/* for dark mode */
+body.dark{
+    color: white;
+    /* transition:  background-color 1.5s 0.5s; */
+    background-color: #1e1e1e;
+    .header{
+        /* transition:  background-color 1.5s 0.5s; */
+        background-color:#232323;
+        color: white;
+        
+    
+    }
+    .header a{
+        color: white;
+    }
+    #containerDot{
+        cursor: pointer;
+        background-color: white;
+        display: flex;
+        background-color: #1e1e1e;
+        /* justify-content: flex-end; */
+      
+    
+}
+  #dot{
+            height: auto;
+            background-color: #cacaca;
+            border-radius: 60px;
+            display: flex;
+            margin-left: auto;
+            /* transition: margin-left 3s 0.2s; */
+ 
+    }
+
+    
+}
+#select option{
+    padding: 3px;
+    
+    
+}
+.header-center{
+    position: absolute;
+    left:42%;
+    font-size: 30px;
+}
+/* end dark mode */
+/* for mobile phone */
+@media(max-width:600px){
+body{
+    width: 200px;
+}
+.header img, .photo button img{
+    cursor: pointer;
+    position:relative ;
+    width: 8px;
+    height: 8px;
+    padding-right: 2px;
+    
+}
+.header{
+    position:fixed;
+    font-size: 9px;
+    /* transition:  background-color 1.5s 0.5s; */
+    width: 100%;
+    height: 2rem;
+    background-color: #abd6de;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    padding: 0.01rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.header a{
+    margin: 1px;
+    /* display: inline-block; */
+
+}
+#home.active{
+    border: none;
+    font-weight: border;
+    transform: scale(1.5);
+}
+.header a:hover{
+    
+    transform: none;
+    
+    
+}
+/* .search-container {
+    
+    display: flex;  
+    flex-grow: 0.5;         
+    align-items: center;
+    width: 160px;    
+    height: 15px;        
+    margin: 0.1rem auto;       
+    border: 0.1px solid #ccc;  
+    border-radius: 25px;     
+    overflow: hidden;        
+    background-color: #f0f0f0;
+}
+
+.search-container input {
+    border: none;
+    display: inline-flex;  
+    padding: 0.1rem 0.11rem;
+    width: 12px;
+    flex: 1;                 
+    font-size: 0.3rem;
+    outline: none;           
+    background-color: transparent;
+}
+.search-container button {
+    display: inline-flex;  
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    padding: 2px 3px;
+    cursor: pointer;
+    font-size: 8px;
+} */
+.photo img{
+    
+    padding:1rem;
+    /* margin:3rem 1rem 1rem 1rem; */
+    width: 11rem;
+    height:11rem;
+    
+}
+.header-center{
+    /* position: block; */
+    left:42%;
+    font-size: 10px;
+    margin-left: 7px;
+}
+#containerDot{
+        cursor: pointer;
+        width: 20px;
+        height: 10px;
+        margin-right: 15px;
+        margin-left: 5px;
+        background-color: white;
+        border:3px solid rgba(24, 32, 153, 0.534);
+        border-radius: 60px;
+        display: flex;
+    #dot{
+    width: 7px;
+    height: auto;
+    background-color: #cacaca;
+    border:3px solid rgba(24, 32, 153, 0.534);
+    border-radius: 60px;
+    display: inline-flex;
+    /* transition:  3s 0.2s; */
+
+    }
+    
+}
+
+    }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+        <title>Home </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Home.css">
+        <link rel="icon"  href="./img/weathertitle.png">
+
+    </head>
+    <body>
+        <div class="header">
+            
+            <a href="Home.html" id="home"> <img src="./img/home.png"/>Home</a>
+            <a href="weather.html" id="weather"><img src="./img/weatherIcon.png"/>Weather </a>
+            
+            
+            <!-- <a href="" id="forecast">Forecast</a> -->
+            
+            <!-- <div class="search-container">
+                <input type="text" placeholder="Search..." id="searchInput">
+                <button id="searchButton" ><p>search</p></button>
+            </div> -->
+            <div class="header-center">
+               ☁️ Weather Now ☀️
+            </div>
+
+            <div id="toggleButton" onclick="changecolor()">
+                <div id="containerDot">
+                    <div id="dot">        
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <div id="welcomemsg">
+            <p>Welcome to WeatherNow</p>
+            <p>Get real-time weather conditions, forecasts, and insights for your location.</p>
+        </div>    
+        <div class="photo">
+            <img src="./img/weatherIcon.png"/>
+            <button><a href="weather.html">go to weather -> <img src="./img/weatherIcon.png"/></a></button>
+        </div>
+  
+        <script src="./Home.js"></script>
+        <script src="header.js"></script>
+
+    </body>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>  
+    <head>
+        <title>weather </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./weather.css">
+        <link rel="stylesheet" href="./Home.css">
+        <link rel="icon"  href="./img/weathertitle.png">
+
+
+    </head>
+    <body>
+
+            <div class="header">
+            
+            <a href="Home.html" id="home"> <img src="./img/home.png"/>Home</a>
+            <a href="weather.html" id="weather"><img src="./img/weatherIcon.png"/>Weather </a>
+            
+            
+            <!-- <a href="" id="forecast">Forecast</a> -->
+            
+            <!-- <div class="search-container">
+                <input type="text" placeholder="Search..." id="searchInput">
+                <button id="searchButton" ><p>search</p></button>
+            </div> -->
+            <div class="header-center">
+               ☁️ Weather Now ☀️
+
+            </div>
+
+            <div id="toggleButton" onclick="changecolor()">
+                <div id="containerDot">
+                    <div id="dot"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="place">
+          <div class="dropdown" id="dropdown">
+                <div class="selected" id="selected" onclick="showcountry()" >Select country</div>
+                <ul class="options" id="options">
+                </ul>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <div class="selected" id="selectedcity" onclick="showcity()" >Select City</div>
+            <ul class="options" id="optionsCity">
+            </ul>
+        </div>
+        <button id="search-btn">search</button>
+    </div>
+    <div id="show-weather">
+        <img id="coldweather" src="./img/cold.png" style="display: none;">
+        <img id="hotweather" src="./img/hot-weather.png" style="display: none;"/>
+        <img  id="normalweather" src="./img/normal.png" style="display: none;"/>
+        <h1 style="display: none;" id="not-found-weather">not found weather</h1>
+
+        <div id="state">
+         <p></p>
+         <p></p>
+         <p></p>
+         <p></p>
+
+        </div>
+   
+
+    </div>
+        <script src="weather.js"></script>
+        <script src="header.js"></script>
+
+        
+
+    </body>
+</html>
