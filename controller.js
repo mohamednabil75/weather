@@ -78,8 +78,6 @@ exp.post("/cities",async(req,res)=>{
 
 })
 
-exp.listen(8080, () => {
-  
-  console.log("Server running on 8080");
-});
+const PORT = process.env.PORT || 3000;
+exp.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
