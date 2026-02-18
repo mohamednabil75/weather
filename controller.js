@@ -30,7 +30,7 @@ exp.post("/currweather",  async(req, res) => {
 //return page home
 exp.get("/home",(req,res)=>{
   console.log(__dirname);
-  res.sendFile(path.join(__dirname, "public", "Home.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
   
 })
 //return weather page
